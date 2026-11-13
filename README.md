@@ -16,7 +16,7 @@ With a minimal footprint (**~2 MB APK**) and low memory overhead, the app runs s
 - **NetActivity Kotlin** — Feature-rich edition with Material You (Material Design 3), TCP socket ping (works over VPN), and a multi-threaded port scanner for Android 11+.
 
 ## Installation
-Download the signed `app-release.apk` from the **[Releases](../../releases)** page and install it on your device (requires Android 7.0 or higher).
+Download the signed `NetActivity.apk` from the **[Releases](../../releases)** page and install it on your device (requires Android 7.0 or higher).
 
 ## Tech Stack
 - **Language:** Java
