@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#121212">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NetActivity"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/etHost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="IP или домен"
+            android:text="8.8.8.8"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:background="#1E1E1E"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:inputType="textUri"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/etCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Пакеты"
+            android:text="4"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:background="#1E1E1E"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Пинговать"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2979FF"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp" />
+
+    <ScrollView
+        android:id="@+id/scrollLog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#1A1A1A"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Готов к работе. Введи адрес и нажми Пинговать."
+            android:textColor="#00E676"
+            android:textSize="13sp"
+            android:typeface="monospace" />
+    </ScrollView>
+
+</LinearLayout>
+
